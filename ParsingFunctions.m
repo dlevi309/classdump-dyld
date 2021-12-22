@@ -444,6 +444,8 @@ NSString* buildProtocolFile(Protocol* currentProtocol) {
               [firstCapitalized stringByAppendingString:[propertyName substringFromIndex:1]];
           if ([methodInLine isEqual:[NSString stringWithFormat:@"set%@", capitalizedFirst]]) {
             // replace setter
+            if ([line rangeOfString:@":("].location == NSNotFound)
+              continue;
             NSString* newLine = [line substringToIndex:[line rangeOfString:@":("].location + 2];
             newLine = [newLine stringByAppendingString:[dict objectForKey:@"type"]];
             newLine = [newLine
