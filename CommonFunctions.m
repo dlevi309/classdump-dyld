@@ -182,7 +182,7 @@ NSMutableArray* generateForbiddenClassesArray(BOOL isRecursive) {
   [forbiddenClasses addObject:@"CoreKnowledge.CKEntity"];
   [forbiddenClasses addObject:@"CoreKnowledge.CKKnowledgeStore"];
   [forbiddenClasses addObject:@"JSExport"];
-  [forbiddenClasses addObject:@"SBClockApplicationIconImageView"];
+//  [forbiddenClasses addObject:@"SBClockApplicationIconImageView"];
   if (IOS11 || IOS12) {
     [forbiddenClasses addObject:@"SKTransformNode"];
     [forbiddenClasses addObject:@"OZFxPlugParameterHandler"];
@@ -347,6 +347,20 @@ NSMutableArray* generateForbiddenPathsArray(BOOL isRecursive) {
         [forbiddenPaths addObject:@"TTSPlugins"];
     }
     [forbiddenPaths addObject:@"Home.framework"];
+    [forbiddenPaths addObject:@"Vision.framework"];
+    [forbiddenPaths addObject:@"SiriUICore.framework"];
+    [forbiddenPaths addObject:@"CoreMotion.framework"];
+    [forbiddenPaths addObject:@"AvatarKit.framework"];
+    [forbiddenPaths addObject:@"USDKit.framework"];
+    [forbiddenPaths addObject:@"VFXBase.framework"];
+    [forbiddenPaths addObject:@"ProVideo.framework"];
+    [forbiddenPaths addObject:@"MetalTools.framework"];
+    [forbiddenPaths addObject:@"SpriteKit.framework"];
+    [forbiddenPaths addObject:@"ARKit.framework"];
+    [forbiddenPaths addObject:@"PencilPairingUI.framework"];
+    [forbiddenPaths addObject:@"CMCapture.framework"];
+    [forbiddenPaths addObject:@"PhotosUICore.framework"];
+    [forbiddenPaths addObject:@"NanoTimeKitCompanion.framework"];
     [forbiddenPaths addObject:@"AppPredictionInternal.framework"];
     [forbiddenPaths addObject:@"NumbersQuicklook.framework"];
     [forbiddenPaths addObject:@"TSText.framework"];

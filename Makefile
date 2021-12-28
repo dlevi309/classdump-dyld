@@ -1,7 +1,7 @@
-CC     ?= gcc-iphone
-CFLAGS ?= -Wall -O2 #-g
+CC = gcc-iphone
+CFLAGS = -Wall -O2 #-g
 
-FRAMEWORKS=-framework Foundation
+FRAMEWORKS= -framework Foundation
 
 TARGETS=classdump-dyld
 
