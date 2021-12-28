@@ -7,4 +7,4 @@
 
 ## Issues
 
-- Dumping a couple frameworks like UIKitCore result in a CFString crash. Although, these frameworks will dump successfully when processing the dyld_shared_cache (the -c option)
+- ~~Dumping a couple frameworks like UIKitCore result in a CFString crash. Although, these frameworks will dump successfully when processing the dyld_shared_cache (the -c option)~~ Now fixed 
